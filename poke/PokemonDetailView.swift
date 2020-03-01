@@ -32,7 +32,6 @@ struct PokemonDetailView: View {
                         Spacer()
                             .frame(height: 141.0)
                     ZStack {
-                        
                         VStack{
                             Spacer()
                                 .frame(height: 57.0)
@@ -52,12 +51,14 @@ struct PokemonDetailView: View {
                             Spacer()
                             .frame(height: 5.0)
                             Text("Squirtle's shell is not merely used for protection.The shell’s rounded shape and the grooves on its surface help minimize resistance in water, enabling this pokemon to swim at high speed.")
+                            .foregroundColor(Color("CellTitleColor"))
                                 .font(.subheadline)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .frame(width: 350, height: 115)
                                 
                             Spacer()
+                            NavigationDetail()
                         }.background(Color.white)
                             .cornerRadius(48)
                         
